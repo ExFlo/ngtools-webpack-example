@@ -16,8 +16,8 @@ module.exports = (envOptions) => {
         },
         module: {
             rules: [
-                { test: /\.html$/, loader: 'raw' },
-                { test: /\.css$/, loader: 'raw' },
+                { test: /\.html$/, loader: 'raw-loader' },
+                { test: /\.css$/, loader: 'raw-loader' },
             ]
         },
         devtool: '#source-map',
