@@ -6,17 +6,17 @@ module.exports = {
     },
     output: {
         path: './dist',
-        filename: '[name].bundle.js',
+        filename: '[name].bundle.js'
     },
     resolve: {
-        extensions: ['.ts', '.js', '.html'],
+        extensions: ['.ts', '.js', '.html']
     },
     module: {
         rules: [
-            { test: /\.html$/, loader: 'raw' },
-            { test: /\.css$/, loader: 'raw' },
+            { test: /\.html$/, loader: 'raw-loader' },
+            { test: /\.css$/, loader: 'raw-loader' },
             { test: /\.ts/, loaders: ['awesome-typescript-loader', 'angular2-template-loader'] }
         ]
     },
-    devtool: '#source-map',
+    devtool: '#source-map'
 };
